@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../dominio/habito.dart';
 import '../dominio/habitos_store.dart';
 import 'tela_detalhe.dart';
+import 'botao_tema.dart';
 
 class TelaHabitos extends StatelessWidget {
   const TelaHabitos({super.key});
@@ -41,6 +42,7 @@ class TelaHabitos extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Meus Hábitos'),
+        actions: const [BotaoTema()],
       ),
 
       body: habitos.isEmpty

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'tela_habitos.dart';
-import 'tela_perfil.dart';
 import 'tela_resumo.dart';
 
 class TelaPrincipal extends StatefulWidget {
@@ -17,7 +16,6 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
   final List<Widget> _telas = const [
     TelaHabitos(),
     TelaResumo(),
-    TelaPerfil(),
   ];
 
   @override
@@ -42,10 +40,6 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           BottomNavigationBarItem(
             icon: Icon(Icons.bar_chart),
             label: 'Resumo',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Perfil',
           ),
         ],
       ),

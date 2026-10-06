@@ -30,9 +30,9 @@ class _TelaNovoHabitoState extends State<TelaNovoHabito> {
   Future<void> _salvarHabito() async {
     if (_chaveForm.currentState!.validate()) {
       final novoHabito = Habito(
-        _nomeController.text.trim(),
-        'Meta: ${_metaController.text.trim()}',
-        _iconeSelecionado,
+        nome: _nomeController.text.trim(),
+        meta: 'Meta: ${_metaController.text.trim()}',
+        tipoIcone: _iconeSelecionado,
       );
 
       await context.read<HabitosStore>().adicionar(

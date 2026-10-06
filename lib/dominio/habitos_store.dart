@@ -12,6 +12,8 @@ class HabitosStore extends ChangeNotifier {
 
   List<Habito> get habitos => List.unmodifiable(_habitos);
 
+  int get quantidade => _habitos.length;
+
   Future<void> carregar() async {
     _habitos = await _repositorio.carregar();
 
